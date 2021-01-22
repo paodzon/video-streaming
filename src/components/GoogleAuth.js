@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {signIn, signOut} from '../actions';
+import {connect} from 'react-redux';
 import { Button } from 'reactstrap';
 
 class GoogleAuth extends React.Component {
@@ -12,31 +14,35 @@ class GoogleAuth extends React.Component {
                 scope: 'email'
             }).then(() =>{
                 this.auth = window.gapi.auth2.getAuthInstance();
-                this.setState({isSignedIn:this.auth.isSignedIn.get()});
+                this.onAuthChange(this.auth.isSignedIn.get());
                 this.auth.isSignedIn.listen(this.onAuthChange);
             })
         });
     }
     
-    onAuthChange =()=>{
-        this.setState({isSignedIn:this.auth.isSignedIn.get()})
+    onAuthChange =(isSignedIn)=>{
+        if(isSignedIn){
+            this.props.signIn(this.auth.currentUser.get().getId());
+        }else{
+            this.props.signOut();
+        }
     }
 
-    onSignIn=() =>{
+    onSignInClick=() =>{
         this.auth.signIn();
     }
 
-    onSignOut=() =>{
+    onSignOutClick=() =>{
         this.auth.signOut();
     }
 
     renderAuthButton(){
-        if(this.state.isSignedIn ===null){
+        if(this.props.isSignedIn ===null){
             return null
-        }else if(this.state.isSignedIn){
-            return <Button onClick={this.onSignOut}>Sign Out</Button>
+        }else if(this.props.isSignedIn){
+            return <Button onClick={this.onSignOutClick}>Sign Out</Button>
         }else{
-            return <Button onClick={this.onSignIn}>Sign In</Button>
+            return <Button onClick={this.onSignInClick}>Sign In</Button>
         }
     }
 
@@ -50,4 +56,11 @@ class GoogleAuth extends React.Component {
 
 }
 
-export default GoogleAuth
+const mapStateToProps = (state) =>{
+    console.log(state.auth.isSignedIn);
+    return{ isSignedIn: state.auth.isSignedIn}
+}
+
+export default connect(mapStateToProps,{
+    signIn,signOut
+})(GoogleAuth);

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-import { Button } from 'reactstrap';
 import GoogleAuth from './GoogleAuth';
 function Header() {
     return (
