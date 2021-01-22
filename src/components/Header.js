@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Button } from 'reactstrap';
+import GoogleAuth from './GoogleAuth';
 function Header() {
     return (
         <div className="header">
@@ -9,6 +10,7 @@ function Header() {
             </div>
             <div className="header-right">
             <h4>All Streams</h4>
+            <GoogleAuth/>
             </div>
             
         </div>
