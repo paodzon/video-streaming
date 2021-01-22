@@ -1,0 +1,17 @@
+.streamcreate{
+    margin: 100px;
+    margin-top: 50px !important;
+}
+label{
+    font-weight: 600 !important;
+}
+.streamcreate-input{
+    margin-top: 20px;
+}
+.streamcreate-form{
+
+}
+.streamcreate-btn{
+    margin-top: 20px;
+    width: 300px;
+}
