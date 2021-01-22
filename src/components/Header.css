@@ -1,0 +1,16 @@
+.header{
+    width: 100%;
+    background-color: #161B22;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    margin: 20px;
+    color: #fff;
+}
+.header-right{
+    margin:20px;
+    color: #fff;
+}
