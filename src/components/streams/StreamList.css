@@ -1,0 +1,15 @@
+.streamlist{
+    margin: 100px;
+}
+.streamlist-con{
+    border-bottom: 1px solid var(--light); ;
+    margin: 10px
+}
+.streamlist-table{
+    border: 1px solid var(--light);
+    padding: 50px;
+}
+.streamlist-header{
+    border-bottom: 1px solid var(--light);
+    margin-bottom: 30px;
+}

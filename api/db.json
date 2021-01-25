@@ -1,0 +1,24 @@
+{
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "asdasd",
+      "id": 1
+    },
+    {
+      "description": "VALORANT STREAM",
+      "title": "P0W7",
+      "id": 2
+    },
+    {
+      "title": "Sample Stream",
+      "description": "LEZGO",
+      "id": 3
+    },
+    {
+      "title": "valo",
+      "description": "samplestream",
+      "id": 4
+    }
+  ]
+}
