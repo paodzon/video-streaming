@@ -1,24 +1,34 @@
 {
   "streams": [
     {
-      "title": "My Stream",
-      "description": "asdasd",
-      "id": 1
+      "title": "CSGO Stream",
+      "description": "Streaming csgo chill games",
+      "userId": "100507888923653544117",
+      "id": 8
     },
     {
-      "description": "VALORANT STREAM",
-      "title": "P0W7",
-      "id": 2
+      "title": "P0WStream",
+      "description": "Test Stream",
+      "userId": "102473075901917338168",
+      "id": 9
     },
     {
-      "title": "Sample Stream",
-      "description": "LEZGO",
-      "id": 3
+      "title": "Test Stream",
+      "description": "12345",
+      "userId": "102473075901917338168",
+      "id": 10
     },
     {
-      "title": "valo",
-      "description": "samplestream",
-      "id": 4
+      "title": "Valorant",
+      "description": "ASDASDSDSA",
+      "userId": "102473075901917338168",
+      "id": 11
+    },
+    {
+      "title": "Random Stream",
+      "description": "sdsdsdasdsdasdsad",
+      "userId": "102473075901917338168",
+      "id": 12
     }
   ]
 }

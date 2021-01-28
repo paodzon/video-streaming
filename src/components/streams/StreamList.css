@@ -1,15 +1,72 @@
 .streamlist{
-    margin: 100px;
+    margin: 150px;
+    margin-top: 100px !important;
 }
 .streamlist-con{
-    border-bottom: 1px solid var(--light); ;
-    margin: 10px
-}
-.streamlist-table{
-    border: 1px solid var(--light);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E4DAD9 ;
     padding: 50px;
 }
-.streamlist-header{
-    border-bottom: 1px solid var(--light);
-    margin-bottom: 30px;
+.streamlist-con:hover{
+    cursor: pointer;
+    background-color: #F1F4FD !important;
+    transition: 0.2s;
 }
+.streamlist-desc{
+    font-size: 15px;
+    color: var(--secondary);
+}
+.streamlist-title{
+    font-size: 20px;
+    color: var(--dark);
+    font-weight: 600;
+}
+.streamlist-table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    
+}
+.streamlist-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E4DAD9;
+    padding: 40px;
+    padding-bottom: 20px !important;
+}
+.streamlist-actions{
+    display: flex;
+    align-items: center;
+}
+.streamlist-icons{
+    margin-right: 50px;
+}
+.streamlist-icons:hover{
+    cursor: pointer;
+    color: var(--secondary) !important;
+    transition: 0.2s;
+}
+.streamlist-create{
+    margin: 10px;
+    margin-right: 40px;
+}
+.streamlist-btn{
+    width: 200px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)
+}
+.streamlist-btn:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
